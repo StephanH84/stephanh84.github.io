@@ -12,29 +12,40 @@
             padding: 0;
         }
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
+            background-color: #2C3E50;
+            color: #ECF0F1;
+            padding: 1.5em;
             text-align: center;
         }
         nav {
-            background-color: #444;
-            overflow: hidden;
+            background-color: #2980B9;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         nav a {
-            float: left;
-            display: block;
-            color: #fff;
-            text-align: center;
-            padding: 14px 16px;
+            color: #ECF0F1;
+            padding: 14px 20px;
             text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
         }
         nav a:hover {
-            background-color: #555;
-            color: white;
+            background-color: #1ABC9C;
         }
         section {
-            padding: 20px;
+            padding: 100px 20px 20px; /* Extra padding to offset the fixed navbar */
+            background-color: #ECF0F1;
+            color: #2C3E50;
+            min-height: 100vh;
+        }
+        section:nth-child(odd) {
+            background-color: #D0E6F1;
         }
     </style>
 </head>
@@ -53,7 +64,7 @@
 
 <section id="projects">
     <h2>Projects</h2>
-    <p>Here you can showcase the projects you’re currently working on or have completed. Summarize each one briefly.</p>
+    <p>Showcase the projects you’re currently working on or have completed. Summarize each one briefly.</p>
 </section>
 
 <section id="bio">
