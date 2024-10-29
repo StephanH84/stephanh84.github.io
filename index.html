@@ -12,15 +12,21 @@
             padding: 0;
         }
         header {
-            background-color: #2C3E50;
-            color: #ECF0F1;
-            padding: 1.5em;
+            background-color: #D32F2F; /* Deep red */
+            color: #FFEB3B; /* Bright yellow */
+            padding: 1em;
             text-align: center;
-        }
-        nav {
-            background-color: #2980B9;
             position: fixed;
             top: 0;
+            width: 100%;
+            z-index: 2;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            background-color: #FFA000; /* Amber */
+            margin-top: 60px; /* Push menu below header */
+            position: fixed;
+            top: 60px;
             width: 100%;
             z-index: 1;
             display: flex;
@@ -28,7 +34,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         nav a {
-            color: #ECF0F1;
+            color: #FFFDE7; /* Light yellow */
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
@@ -36,16 +42,18 @@
             transition: background-color 0.3s ease;
         }
         nav a:hover {
-            background-color: #1ABC9C;
+            background-color: #FFCC80; /* Light orange */
         }
         section {
-            padding: 100px 20px 20px; /* Extra padding to offset the fixed navbar */
-            background-color: #ECF0F1;
-            color: #2C3E50;
+            padding: 120px 20px 20px; /* Offset padding for fixed header and navbar */
+            color: #5D4037; /* Dark brown */
             min-height: 100vh;
         }
         section:nth-child(odd) {
-            background-color: #D0E6F1;
+            background-color: #FFEBEE; /* Very light red-pink */
+        }
+        section:nth-child(even) {
+            background-color: #FFF8E1; /* Very light yellow */
         }
     </style>
 </head>
