@@ -55,6 +55,7 @@
             padding-top: 240px; /* Ensures sections don’t overlap with fixed header and navbar */
             color: #5D4037; /* Dark brown */
             min-height: 100vh;
+            padding-left: 20px;
         }
         section:nth-child(odd) {
             background-color: #ebf5ff; /* Very light blue */
@@ -123,10 +124,13 @@
 <section id="bio">
     <h2>Bio</h2>
     <p>Introduce yourself with a short bio, your background, and key areas of expertise.</p>
-    <p>
-        I have a Masters (Diploma) in Pure Mathematics, worked as a Software Engineer for a couple of years and later became a Machine Learning Engineer. Recently for 3 years I worked as a Data Scientist with projects in Operations Research and Computer Vision.
-        See my <a href="#projects">projects</a>.
-    </p>
+    <div style="display: flex; align-items: center; gap: 20px;">
+        <img src="profile-picture.jpg" alt="Stephan Hähne" style="width:200px; height:auto; margin-top:10px;">
+            <p>
+                I have a Masters (Diploma) in Pure Mathematics, worked as a Software Engineer for a couple of years and later became a Machine Learning Engineer. Recently for 3 years I worked as a Data Scientist with projects in Operations Research and Computer Vision.
+                See my <a href="#projects">projects</a>.
+            </p>
+    </div>
 </section>
 
 <section id="freelance">
